@@ -1,22 +1,48 @@
 {
-  "name": "hoangtvh@hoangtvh-vue3-component-library",
-  "version": "0.0.1",
+  "name": "hoangtvh-vue3-component-library",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/library.js",
   "module": "dist/library.mjs",
   "files": [
     "dist/*"
   ],
-  "scripts": {
-    "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "directories": {
+    "doc": "docs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "debug": "^4.3.4",
+    "estree-walker": "^2.0.2",
+    "hash-sum": "^2.0.0",
+    "magic-string": "^0.25.9",
+    "ms": "^2.1.2",
+    "nanoid": "^3.3.4",
+    "picocolors": "^1.0.0",
+    "postcss": "^8.4.14",
     "rollup": "^2.75.4",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-vue": "^6.0.0"
-  }
+    "rollup-plugin-vue": "^6.0.0",
+    "rollup-pluginutils": "^2.8.2",
+    "source-map": "^0.6.1",
+    "source-map-js": "^1.0.2",
+    "sourcemap-codec": "^1.4.8"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.46"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tranvanhuyhoang/vuejs-mf-component-libraries.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tranvanhuyhoang/vuejs-mf-component-libraries/issues"
+  },
+  "homepage": "https://github.com/tranvanhuyhoang/vuejs-mf-component-libraries#readme"
 }
